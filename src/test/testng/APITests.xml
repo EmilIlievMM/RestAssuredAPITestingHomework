@@ -1,7 +1,8 @@
 <suite name="Suite1" verbose="1" parallel="classes">
     <test name="Regression1">
         <classes>
-            <class name="UserAccountTests"/>
+            <!-- <class name="apitests.Tests.UserTests.PositiveUserAccountTests.GetUserInfo"/> -->
+            <class name="SkilloTests.Tests.LogInTest"/>
         </classes>
     </test>
 </suite>
