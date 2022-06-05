@@ -1,7 +1,7 @@
-package apitests.Tests.Posts;
+package APITests.Tests.Posts;
 
-import apitests.POJO.PostPOJO;
-import apitests.Setup.BaseSetup;
+import APITests.POJO.PostPOJO;
+import APITests.Setup.BaseSetup;
 import io.restassured.response.Response;
 import org.hamcrest.Matchers;
 

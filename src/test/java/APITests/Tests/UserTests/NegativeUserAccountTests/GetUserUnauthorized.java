@@ -1,6 +1,6 @@
-package apitests.Tests.UserTests.NegativeUserAccountTests;
+package APITests.Tests.UserTests.NegativeUserAccountTests;
 
-import apitests.Setup.BaseSetup;
+import APITests.Setup.BaseSetup;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;

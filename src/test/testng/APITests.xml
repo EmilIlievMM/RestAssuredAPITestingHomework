@@ -1,8 +1,9 @@
 <suite name="Suite1" verbose="1" parallel="classes">
     <test name="Regression1">
         <classes>
-            <!-- <class name="apitests.Tests.UserTests.PositiveUserAccountTests.GetUserInfo"/> -->
-            <class name="SkilloTests.Tests.LogInTest"/>
+            <!-- <class name="APITests.Tests.UserTests.PositiveUserAccountTests.GetUserInfo"/> -->
+            <class name="SkilloTestsPOM.Tests.LogInTest"/>
+            <class name="MobileTestsSelenium.FindCarsTest"/>
         </classes>
     </test>
 </suite>

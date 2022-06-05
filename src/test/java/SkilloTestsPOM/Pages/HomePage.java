@@ -1,18 +1,19 @@
-package SkilloTests.Pages;
+package SkilloTestsPOM.Pages;
 
-import SkilloTests.Tests.BaseSetupSkillo;
+import SkilloTestsPOM.BaseSetup.Waits;
+import SkilloTestsPOM.BaseSetup.BaseSetupSkillo;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 
 public class HomePage extends BaseSetupSkillo {
 
     // Selectors
-    By loginButton = By.id("nav-link-login");
+    By loginButton = By.xpath("//ul[@class='navbar-nav']//a[@id='nav-link-login']");
 
     // Methods
     public void clickLogin(WebDriver driver) {
+        Waits.visibilityOfElement(driver, loginButton);
         driver.findElement(loginButton).click();
     }
 

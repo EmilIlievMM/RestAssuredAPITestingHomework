@@ -1,6 +1,6 @@
-package apitests.Tests.UserTests.PositiveUserAccountTests;
+package APITests.Tests.UserTests.PositiveUserAccountTests;
 
-import apitests.Setup.BaseSetup;
+import APITests.Setup.BaseSetup;
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.given;

@@ -1,6 +1,6 @@
-package apitests.Setup;
+package APITests.Setup;
 
-import apitests.POJO.LoginPOJO;
+import APITests.POJO.LoginPOJO;
 import com.jayway.jsonpath.JsonPath;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;

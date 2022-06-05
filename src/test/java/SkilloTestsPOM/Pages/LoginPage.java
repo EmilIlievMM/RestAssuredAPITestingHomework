@@ -1,9 +1,9 @@
-package SkilloTests.Pages;
+package SkilloTestsPOM.Pages;
 
-import SkilloTests.Tests.BaseSetupSkillo;
+import SkilloTestsPOM.BaseSetup.Waits;
+import SkilloTestsPOM.BaseSetup.BaseSetupSkillo;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 
 public class LoginPage extends BaseSetupSkillo {
@@ -11,9 +11,9 @@ public class LoginPage extends BaseSetupSkillo {
     private String password;
 
     // Selectors
-    By userNameField = By.id("defaultLoginFormUsername");
-    By passwordField = By.id("defaultLoginFormPassword");
-    By signInBtn = By.id("sign-in-button");
+    By userNameField = By.xpath("//input[@id='defaultLoginFormUsername']");
+    By passwordField = By.xpath("//input[@id='defaultLoginFormPassword']");
+    By signInBtn = By.xpath("//form//button[@id='sign-in-button']");
 
     // Setters and Getters
     public String getUserName() {
@@ -34,6 +34,8 @@ public class LoginPage extends BaseSetupSkillo {
 
     // Methods
     public void fillSignInForm(WebDriver driver) {
+        Waits.visibilityOfElement(driver, userNameField);
+        Waits.visibilityOfElement(driver, passwordField);
         driver.findElement(userNameField).sendKeys(userName);
         driver.findElement(passwordField).sendKeys(password);
     }

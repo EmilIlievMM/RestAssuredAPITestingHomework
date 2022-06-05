@@ -1,4 +1,4 @@
-package apitests.POJO;
+package APITests.POJO;
 
 public class RegisterPOJO {
     private String username;

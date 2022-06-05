@@ -1,8 +1,8 @@
-package apitests.Tests.UserTests.PositiveUserAccountTests;
+package APITests.Tests.UserTests.PositiveUserAccountTests;
 
-import apitests.POJO.LoginPOJO;
-import apitests.POJO.RegisterPOJO;
-import apitests.Setup.BaseSetup;
+import APITests.POJO.LoginPOJO;
+import APITests.POJO.RegisterPOJO;
+import APITests.Setup.BaseSetup;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.github.javafaker.Faker;
 import com.jayway.jsonpath.JsonPath;

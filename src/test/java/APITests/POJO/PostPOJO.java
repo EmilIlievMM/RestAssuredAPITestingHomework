@@ -1,4 +1,4 @@
-package apitests.POJO;
+package APITests.POJO;
 
 public class PostPOJO {
     private String caption;

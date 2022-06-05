@@ -1,4 +1,4 @@
-package apitests.POJO;
+package APITests.POJO;
 
 /**
  * POJO Class for login credentials.

@@ -1,15 +1,17 @@
-package SkilloTests.Tests;
+package SkilloTestsPOM.Tests;
 
-import SkilloTests.Pages.HomePage;
-import SkilloTests.Pages.LoginPage;
-import SkilloTests.Pages.PostsPage;
+import SkilloTestsPOM.Pages.HomePage;
+import SkilloTestsPOM.Pages.LoginPage;
+import SkilloTestsPOM.Pages.PostsPage;
+import SkilloTestsPOM.BaseSetup.BaseSetupSkillo;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public abstract class LogInTest extends BaseSetupSkillo {
+
+public class LogInTest extends BaseSetupSkillo {
 
     @Test
-    void logInTest() {
+    public void logInTest() {
         driver.get("http://training.skillo-bg.com/posts/all");
 
         HomePage homePage = new HomePage();

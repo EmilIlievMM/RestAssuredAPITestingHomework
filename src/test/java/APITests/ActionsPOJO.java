@@ -1,4 +1,4 @@
-package apitests;
+package APITests;
 
 /**
  * Actions POJO for actions around the Swagger API
