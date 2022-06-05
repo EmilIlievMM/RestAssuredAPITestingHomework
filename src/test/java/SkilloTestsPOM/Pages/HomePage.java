@@ -12,7 +12,7 @@ public class HomePage extends BaseSetupSkillo {
     By loginButton = By.xpath("//ul[@class='navbar-nav']//a[@id='nav-link-login']");
 
     // Methods
-    public void clickLogin(WebDriver driver) {
+    public void clickLogin() {
         Waits.visibilityOfElement(driver, loginButton);
         driver.findElement(loginButton).click();
     }

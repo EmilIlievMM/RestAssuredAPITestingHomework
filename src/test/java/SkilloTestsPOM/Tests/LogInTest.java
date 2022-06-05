@@ -15,16 +15,17 @@ public class LogInTest extends BaseSetupSkillo {
         driver.get("http://training.skillo-bg.com/posts/all");
 
         HomePage homePage = new HomePage();
-        homePage.clickLogin(driver);
+        homePage.clickLogin();
 
         LoginPage logInPage = new LoginPage();
         logInPage.setUserName("test51");
         logInPage.setPassword("test51");
-        logInPage.fillSignInForm(driver);
-        logInPage.clickSignInBtn(driver);
+        logInPage.fillSignInForm();
+        logInPage.clickSignInBtn();
 
         PostsPage postsPage = new PostsPage();
 
-        Assert.assertTrue(postsPage.isNewPostBtnDisplayed(driver));
+        Assert.assertTrue(postsPage.isNewPostBtnDisplayed());
+        Assert.assertEquals(postsPage.getDisplayedButtonName(), postsPage.getNewPostBtn());
     }
 }

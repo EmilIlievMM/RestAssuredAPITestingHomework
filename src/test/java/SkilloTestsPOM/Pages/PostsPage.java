@@ -1,17 +1,27 @@
 package SkilloTestsPOM.Pages;
 
 import SkilloTestsPOM.BaseSetup.BaseSetupSkillo;
+import SkilloTestsPOM.BaseSetup.Waits;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 public class PostsPage extends BaseSetupSkillo {
-    private static final String newPostBtnName = "New Posts";
+    private static final String newPostBtnName = "New post";
+
+    public String getNewPostBtn() {
+        return newPostBtnName;
+    }
 
     // Selectors
-    By newPostBtn = By.xpath("//ul[@class='navbar-nav']//a[@id='nav-link-login']");
+    By newPostBtnLocator = By.xpath("//a[@id='nav-link-new-post']");
 
-    public boolean isNewPostBtnDisplayed(WebDriver driver) {
-        return driver.findElement(newPostBtn).isDisplayed();
+    public boolean isNewPostBtnDisplayed() {
+        Waits.visibilityOfElement(driver, newPostBtnLocator);
+        return driver.findElement(newPostBtnLocator).isDisplayed();
+    }
+
+    public String getDisplayedButtonName() {
+        Waits.visibilityOfElement(driver, newPostBtnLocator);
+        return driver.findElement(newPostBtnLocator).getText();
     }
 
 }

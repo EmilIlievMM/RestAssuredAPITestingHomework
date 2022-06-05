@@ -33,14 +33,14 @@ public class LoginPage extends BaseSetupSkillo {
     }
 
     // Methods
-    public void fillSignInForm(WebDriver driver) {
+    public void fillSignInForm() {
         Waits.visibilityOfElement(driver, userNameField);
         Waits.visibilityOfElement(driver, passwordField);
         driver.findElement(userNameField).sendKeys(userName);
         driver.findElement(passwordField).sendKeys(password);
     }
 
-    public void clickSignInBtn(WebDriver driver) {
+    public void clickSignInBtn() {
         driver.findElement(signInBtn).click();
     }
 
